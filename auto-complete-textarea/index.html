@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>auto-complete-textarea</title>
+	<style>
+		.edit {min-height:100px;border:1px solid black;text-align:left;}
+		.searchResult{
+			display: block;
+			cursor: pointer;
+			border: 0.5px solid black;
+		}
+	</style>
+</head>
+<body style="text-align:center" onload="init()">
+	<div class="edit" id="textarea" contentEditable="true" onkeyup="loadAutoComplete()">
+	</div>
+</body>
+<script type="text/javascript" src="model/AutoCompleteTextArea.js"></script>
+<script type="text/javascript" src="model/Trie.js"></script>
+<script type="text/javascript" src="model/model.js"></script>
+<script type="text/javascript" src="controller/controller.js"></script>
+</html>
